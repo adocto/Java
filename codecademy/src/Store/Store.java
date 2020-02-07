@@ -1,19 +1,25 @@
 public class Store {
     // instance fields
     String productType;
-    int inventoryCount;
-    double inventoryPrice;
+    double price;
 
     // constructor method
-    public Store(String product, int count, double price) {
+    public Store(String product, double initialPrice) {
         productType = product;
-        inventoryCount = count;
-        inventoryPrice = price;
+        price = initialPrice;
     }
+
+    // increase price method
+    public void increasePrice(double priceToAdd){
+        double newPrice = price + priceToAdd;
+        price = newPrice;
+    }
+
+    // get price with tax method
 
     // main method
     public static void main(String[] args) {
-        Store cookieShop = new Store("cookies",12,3.75);
-        System.out.println(cookieShop.productType);
+        Store lemonadeStand = new Store("Lemonade", 3.75);
+
     }
 }
