@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Java.iml" filepath="$PROJECT_DIR$/Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lvl1examples/com.codegym.task.task01.task0102/com.codegym.task.task01.task0102.iml" filepath="$PROJECT_DIR$/lvl1examples/com.codegym.task.task01.task0102/com.codegym.task.task01.task0102.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lvl1examples/com.codegym.task.task01.task0103/com.codegym.task.task01.task0103.iml" filepath="$PROJECT_DIR$/lvl1examples/com.codegym.task.task01.task0103/com.codegym.task.task01.task0103.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lvl1examples/com.codegym.task.task01.task0105/src/com.codegym.task.task01.task0105.iml" filepath="$PROJECT_DIR$/lvl1examples/com.codegym.task.task01.task0105/src/com.codegym.task.task01.task0105.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lvl1examples/lvl1examples.iml" filepath="$PROJECT_DIR$/lvl1examples/lvl1examples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lvl2examples/lvl2examples.iml" filepath="$PROJECT_DIR$/lvl2examples/lvl2examples.iml" />
+    </modules>
+  </component>
+</project>
