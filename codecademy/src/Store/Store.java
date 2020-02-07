@@ -15,11 +15,17 @@ public class Store {
         price = newPrice;
     }
 
+    public double getPriceWithTax(){
+        double totalPrice = price + price*0.08;
+        return totalPrice;
+    }
+
     // get price with tax method
 
     // main method
     public static void main(String[] args) {
         Store lemonadeStand = new Store("Lemonade", 3.75);
-
+        double lemonadePrice = lemonadeStand.getPriceWithTax();
+        System.out.println(lemonadePrice);
     }
 }
