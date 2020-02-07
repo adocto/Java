@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Java.iml" filepath="$PROJECT_DIR$/Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/codecademy/codecademy.iml" filepath="$PROJECT_DIR$/codecademy/codecademy.iml" />
       <module fileurl="file://$PROJECT_DIR$/lvl1examples/com.codegym.task.task01.task0102/com.codegym.task.task01.task0102.iml" filepath="$PROJECT_DIR$/lvl1examples/com.codegym.task.task01.task0102/com.codegym.task.task01.task0102.iml" />
       <module fileurl="file://$PROJECT_DIR$/lvl1examples/com.codegym.task.task01.task0103/com.codegym.task.task01.task0103.iml" filepath="$PROJECT_DIR$/lvl1examples/com.codegym.task.task01.task0103/com.codegym.task.task01.task0103.iml" />
       <module fileurl="file://$PROJECT_DIR$/lvl1examples/com.codegym.task.task01.task0105/src/com.codegym.task.task01.task0105.iml" filepath="$PROJECT_DIR$/lvl1examples/com.codegym.task.task01.task0105/src/com.codegym.task.task01.task0105.iml" />
