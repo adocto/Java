@@ -1,24 +1,19 @@
 public class Store {
+    // declare instance fields here!
 
 
-    // new method: constructor!
+    // constructor method
     public Store() {
         System.out.println("I am inside the constructor method.");
+        String productType;
     }
 
-    // main method is where we create instances!
+    // main method
     public static void main(String[] args) {
-        System.out.println("Start of the main method.");
+        System.out.println("This code is inside the main method.");
 
         Store lemonadeStand = new Store();
 
         System.out.println(lemonadeStand);
-
-
-
-        // create the instance below
-
-        // print the instance below
-
     }
 }
