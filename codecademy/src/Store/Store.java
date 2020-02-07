@@ -15,17 +15,22 @@ public class Store {
         price = newPrice;
     }
 
+    // get price with tax method
     public double getPriceWithTax(){
-        double totalPrice = price + price*0.08;
+        double tax = 0.08;
+        double totalPrice = price + price*tax;
         return totalPrice;
     }
-
-    // get price with tax method
+    public String toString(){
+        String descript = ("This store sells "+ productType +" at a price of "+price+".");
+        return descript;
+    }
 
     // main method
     public static void main(String[] args) {
         Store lemonadeStand = new Store("Lemonade", 3.75);
-        double lemonadePrice = lemonadeStand.getPriceWithTax();
-        System.out.println(lemonadePrice);
+        Store cookieShop = new Store("Cookies", 5);
+        System.out.println(lemonadeStand);
+        System.out.println(cookieShop);
     }
 }
