@@ -1,4 +1,5 @@
 package Noodle;
+
 class Noodle {
 
     protected double lengthInCentimeters;
@@ -18,16 +19,7 @@ class Noodle {
 
     public void cook() {
 
-        System.out.println("Boiling.");
-
         this.texture = "cooked";
-
-    }
-
-    public static void main(String[] args) {
-
-        Spaetzle kaesespaetzle = new Spaetzle();
-        kaesespaetzle.cook();
 
     }
 
