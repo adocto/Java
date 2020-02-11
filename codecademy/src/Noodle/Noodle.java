@@ -23,18 +23,10 @@ class Noodle {
 
     }
 
-
     public static void main(String[] args) {
 
-        Noodle spaghetti, ramen, pho;
 
-        spaghetti = new Spaghetti();
-        ramen = new Ramen();
-        pho = new Pho();
 
-        // Add your code below:
-        Noodle[] allTheNoodles = {spaghetti, ramen,pho};
-        
     }
 
 }
