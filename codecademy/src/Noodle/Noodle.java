@@ -1,6 +1,5 @@
 package Noodle;
-
-public class Noodle {
+class Noodle {
 
     protected double lengthInCentimeters;
     protected double widthInCentimeters;
@@ -17,17 +16,18 @@ public class Noodle {
 
     }
 
-    public boolean isTasty() {
+    public void cook() {
 
-        return true;
+        System.out.println("Boiling.");
+
+        this.texture = "cooked";
 
     }
 
     public static void main(String[] args) {
 
-        Ramen yasaiRamen = new Ramen();
-        //System.out.println(yasaiRamen.ingredients);
-        System.out.println(yasaiRamen.isTasty());
+        Spaetzle kaesespaetzle = new Spaetzle();
+        kaesespaetzle.cook();
 
     }
 
