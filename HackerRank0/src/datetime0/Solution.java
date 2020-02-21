@@ -27,10 +27,10 @@ class Result {
      */
 
     public static String findDay(int month, int day, int year) {
-        LocalDate date0 = LocalDate.of(month,day,year);
+        LocalDate date0 = LocalDate.of(year,month,day);
 
-        DayOfWeek res = date0.getDayOfWeek();
-        return String.valueOf(res);
+        String res = String.valueOf(date0.getDayOfWeek());
+        return res;
 
     }
 
