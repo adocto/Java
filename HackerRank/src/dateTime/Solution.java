@@ -4,10 +4,15 @@ import java.io.*;
 import java.math.*;
 import java.security.*;
 import java.text.*;
+import java.time.DayOfWeek;
 import java.util.*;
 import java.util.concurrent.*;
+import java.util.function.*;
 import java.util.regex.*;
-
+import java.util.stream.*;
+import static java.util.stream.Collectors.joining;
+import static java.util.stream.Collectors.toList;
+import java.time.LocalDate;
 class Result {
 
     /*
@@ -21,7 +26,13 @@ class Result {
      */
 
     public static String findDay(int month, int day, int year) {
-
+        LocalDate Date0;
+        Date0 = LocalDate.of(year, month,day);
+        DayOfWeek Day0 = Date0.getDayOfWeek();
+        System.out.println(Day0);
+        String res = Day0.toString();
+        System.out.println(res);
+        return res;
     }
 
 }
@@ -48,4 +59,3 @@ public class Solution {
         bufferedWriter.close();
     }
 }
-
