@@ -7,6 +7,8 @@ import java.math.*;
 import java.util.regex.*;
 
 public class Solution {
+    public Locale(String english,
+                  String India)
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -14,6 +16,10 @@ public class Solution {
         scanner.close();
 
         // Write your code here.
+        String us = NumberFormat.getCurrencyInstance(Locale.US).format(payment);
+        String india = NumberFormat.getCurrencyInstance(new Locale("en","IN")).format(payment);
+        String china = NumberFormat.getCurrencyInstance(Locale.CHINA).format(payment);
+        String france = NumberFormat.getCurrencyInstance(Locale.FRANCE).format(payment);
 
         System.out.println("US: " + us);
         System.out.println("India: " + india);
