@@ -6,21 +6,27 @@ public class Solution {
         String smallest = "";
         String largest = "";
         int length = s.length();
-        int left =0;
-        int right = k-1;
+        int left = 0;
+        int right = k;
         String currentString = s.substring(left,right);
-        int i;
         smallest = currentString;
         largest = currentString;
 
-        for(i = 0, i < length, i++){
+        while(right < length){
             currentString = s.substring(left,right);
-            
+            if(smallest.compareTo(currentString) < 0){
+                smallest = currentString;
+            }else{
+
+            }
+            if(currentString.compareTo(largest) > 0){
+                largest = currentString;
+            }else{
+
+            }
+            left++;
+            right++;
         }
-
-
-
-
         // Complete the function
         // 'smallest' must be the lexicographically smallest substring of length 'k'
         // 'largest' must be the lexicographically largest substring of length 'k'
