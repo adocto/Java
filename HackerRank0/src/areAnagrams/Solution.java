@@ -1,25 +1,45 @@
 package areAnagrams;
 
+import java.util.HashMap;
 import java.util.Hashtable;
+import java.util.Map;
 import java.util.Scanner;
 
 public class Solution {
 
     static boolean isAnagram(String a, String b) {
         // Complete the function
-        Map <Character,Integer> tableA = new Hashtable<Object, Object>();
-        Map <Character,Integer> tableB = new Hashtable<Object, Object>();
-        int i = 0;
-        int j = 0;
-        for (i, i<a.length(),i++){
-            
-        }
-
-
-        if (tableA.equals(tableB)){
-            return true;
-        }else{
+        int lenA =  a.length();
+        int lenB = b.length();
+        if(lenA != lenB){
             return false;
+        }else{
+            a = a.toLowerCase();
+            b = b.toLowerCase();
+            Map<Character, Integer> map = new HashMap<>();
+            for (int i = 0; i < lenA; i++){
+                char currentLetter = a.charAt(i);
+                if(map.containsKey(currentLetter)){
+                    Integer occurrence = map.get(currentLetter);
+                    map.put(currentLetter,++occurrence);
+                }else{
+                    map.put(currentLetter,1);
+                }
+            }
+
+            for(int j = 0; j < lenB; j++){
+                char currentLetter = b.charAt(j);
+                if(map.containsKey(currentLetter)){
+                    Integer occurrence = map.get(currentLetter);
+                    if(occurrence == 0){
+                        return false;
+                    }else{
+                        map.put(currentLetter,--occurrence);
+                    }
+                }else{
+                    return false;
+                }
+            }
         }
     }
 
