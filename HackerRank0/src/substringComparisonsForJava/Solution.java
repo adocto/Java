@@ -5,6 +5,10 @@ public class Solution {
     public static String getSmallestAndLargest(String s, int k) {
         String smallest = "";
         String largest = "";
+        int left =0;
+        int right = k-1;
+
+        
 
         // Complete the function
         // 'smallest' must be the lexicographically smallest substring of length 'k'
@@ -19,6 +23,7 @@ public class Solution {
         String s = scan.next();
         int k = scan.nextInt();
         scan.close();
+
 
         System.out.println(getSmallestAndLargest(s, k));
     }
