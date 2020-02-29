@@ -12,9 +12,9 @@ public class Solution {
         smallest = currentString;
         largest = currentString;
 
-        while(right < length){
+        while(right <= length){
             currentString = s.substring(left,right);
-            if(smallest.compareTo(currentString) < 0){
+            if(currentString.compareTo(smallest) < 0){
                 smallest = currentString;
             }else{
 
@@ -26,11 +26,11 @@ public class Solution {
             }
             left++;
             right++;
+
         }
         // Complete the function
         // 'smallest' must be the lexicographically smallest substring of length 'k'
         // 'largest' must be the lexicographically largest substring of length 'k'
-
         return smallest + "\n" + largest;
     }
 
@@ -40,7 +40,6 @@ public class Solution {
         String s = scan.next();
         int k = scan.nextInt();
         scan.close();
-
 
         System.out.println(getSmallestAndLargest(s, k));
     }
