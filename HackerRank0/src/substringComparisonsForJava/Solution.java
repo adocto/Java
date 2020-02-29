@@ -7,8 +7,10 @@ public class Solution {
         String largest = "";
         int left =0;
         int right = k-1;
+        String currentString;
 
         
+
 
         // Complete the function
         // 'smallest' must be the lexicographically smallest substring of length 'k'
