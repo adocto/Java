@@ -10,7 +10,11 @@ public class Solution {
         Map <Character,Integer> tableA = new Hashtable<Object, Object>();
         Map <Character,Integer> tableB = new Hashtable<Object, Object>();
 
-        return ret;
+        if (tableA.equals(tableB)){
+            return true;
+        }else{
+            return false;
+        }
     }
 
     public static void main(String[] args) {
