@@ -9,6 +9,12 @@ public class Solution {
         // Complete the function
         Map <Character,Integer> tableA = new Hashtable<Object, Object>();
         Map <Character,Integer> tableB = new Hashtable<Object, Object>();
+        int i = 0;
+        int j = 0;
+        for (i, i<a.length(),i++){
+            
+        }
+
 
         if (tableA.equals(tableB)){
             return true;
