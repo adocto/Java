@@ -15,6 +15,8 @@ public class Solution {
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
+        //stack for storing binary members
+        Stack<int> binStack = new Stack<int>();
         int n = scanner.nextInt();
         scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
 
