@@ -16,7 +16,7 @@ public class Solution {
 
     public static void main(String[] args) {
         //stack for storing binary members
-        Stack<int> binStack = new Stack<int>();
+        Stack<Integer> binStack = new Stack<Integer>();
         int n = scanner.nextInt();
         scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
 
@@ -41,7 +41,7 @@ public class Solution {
                 currentMax = 0;
             }
         }
-
+        System.out.println(max1);
 
     }
 }
