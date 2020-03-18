@@ -12,16 +12,21 @@ public class Main {
         for(int i = 0; i < N; i++){
             height[i] = myKeyboard.nextInt();
         }
-        for(int j = 1; j < N; j++){
-            if((height[j] > height[j-1])){//&& speed > 0
-                speed = speed - 1;
-            }else if (height[j] < height[j-1]){
-                speed = speed+1;
+        for(int j = 0; j < N; j++){
+            if(j > 0) {
+                if ((height[j] > height[j - 1])) {
+                    speed = speed - 1;
+                } else if ((height[j] < height[j - 1])) {
+                    speed = speed + 1;
+                } else{
+                    speed = speed;
+                }
+                if (speed > max) {
+                    max = speed;
+                }
+            }else {
+                speed = speed;
             }
-            if(speed > max){
-                max = speed;
-            }
-
         }
         System.out.println(max);
     }
