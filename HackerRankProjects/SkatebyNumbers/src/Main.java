@@ -7,7 +7,7 @@ public class Main {
         Scanner myKeyboard = new Scanner(System.in);
         int N = myKeyboard.nextInt();
         int[] height = new int[N];
-        int speed = 0;
+        int speed = 1;
         int max = 0;
         for(int i = 0; i < N; i++){
             height[i] = myKeyboard.nextInt();
