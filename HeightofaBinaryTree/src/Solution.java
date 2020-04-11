@@ -23,6 +23,24 @@ class Solution {
     */
     public static int height(Node root) {
         // Write your code here.
+        int height = 0;
+        Stack nodes = new Stack<>();
+        Node current = root;
+        private void inOrder(TreeNode node) {
+            if (node == null) {
+                if(nodes.size() > height){
+                    height = nodes.size();
+                }
+                return;
+            }
+
+            inOrder(node.left);
+            System.out.printf("%s ", node.data);
+            inOrder(node.right);
+        }
+
+
+        return height;
     }
 
     public static Node insert(Node root, int data) {
