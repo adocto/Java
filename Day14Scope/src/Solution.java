@@ -10,10 +10,20 @@ class Difference {
     public int maximumDifference;
     private int l = 0;
     private int r = 0;
+    private int absoluteDifference;
 
     // Add your code here
-    Difference(Int[] a) {
-
+    Difference (int[] a) {
+        maximumDifference = 0;
+        absoluteDifference = 0;
+        for(int l = 0; l < a.length; l++){
+            for(int r = 0; r < a.length; r++){
+                absoluteDifference = Math.abs(a[l] - a[r]);
+                if(absoluteDifference > maximumDifference){
+                    maximumDifference = absoluteDifference;
+                }
+            }
+        }
     }
 } // End of Difference class
 
