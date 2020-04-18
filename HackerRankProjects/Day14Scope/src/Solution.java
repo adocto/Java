@@ -1,29 +1,33 @@
-import java.io.*;
 import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
 
 
 class Difference {
+
     private int[] elements;
     public int maximumDifference;
+    // Add your code here
     private int l = 0;
     private int r = 0;
     private int absoluteDifference;
-
-    // Add your code here
-    Difference (int[] a) {
-        maximumDifference = 0;
-        absoluteDifference = 0;
-        for(int l = 0; l < a.length; l++){
-            for(int r = 0; r < a.length; r++){
-                absoluteDifference = Math.abs(a[l] - a[r]);
+    private int[] a;
+    public Difference(int[] a){
+        this.elements = a;
+        this.l = 0;
+        this.r = 0;
+        this.absoluteDifference = 0;
+        this.maximumDifference = 0;
+    }
+    int computeDifference () {
+        int arrSize = elements.length;
+        for(int l = 0; l < arrSize; l++){
+            for(int r = 0; r < arrSize; r++){
+                absoluteDifference = Math.abs(elements[l] - elements[r]);
                 if(absoluteDifference > maximumDifference){
                     maximumDifference = absoluteDifference;
                 }
             }
         }
+        return absoluteDifference;
     }
 } // End of Difference class
 
